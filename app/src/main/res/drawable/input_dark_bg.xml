@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- A deep charcoal color for input fields and unselected cards -->
+    <solid android:color="#1A1A1A" />
+
+    <!-- Slightly rounded corners -->
+    <corners android:radius="10dp" />
+</shape>

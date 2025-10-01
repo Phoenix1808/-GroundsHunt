@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00172D"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img"
+            android:contentDescription="GroundHunt Logo"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GROUNDSHUNT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            android:fontFamily="@font/slkscr"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find your perfect ground"
+            android:textSize="16sp"
+            android:textColor="#24D999"
+            android:fontFamily="@font/slkscr"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottominfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© GroundsHunt. All rights reserved."
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/slkscr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textColor="#BBBBBB"/>
+
+</RelativeLayout>

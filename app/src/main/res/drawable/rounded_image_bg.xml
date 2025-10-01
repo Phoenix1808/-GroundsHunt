@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- A solid dark color, slightly lighter than the main background,
+         to provide a subtle frame around the image. -->
+    <solid android:color="#1A1A1A" />
+
+    <!-- Large radius for very rounded corners (you can adjust this) -->
+    <corners android:radius="12dp" />
+
+    <!-- Optional: Add a thin stroke using the accent color if you want the thumbnail to pop -->
+    <!--
+    <stroke
+        android:width="1dp"
+        android:color="@color/accent_teal" />
+    -->
+</shape>
