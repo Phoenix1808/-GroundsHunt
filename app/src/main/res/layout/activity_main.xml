@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_dark_navy"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context="com.yourpackage.groundshunt.MainActivity">
 
     <LinearLayout
         android:id="@+id/app_bar"
@@ -24,7 +24,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_menu"
-            android:tint="@color/white"
+            app:tint="@color/white"
             android:contentDescription="Menu"/>
 
         <TextView
@@ -42,7 +42,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_filter"
-            android:tint="@color/white"
+            app:tint="@color/white"
             android:contentDescription="Filter"
             android:layout_marginEnd="16dp"/>
 
@@ -50,7 +50,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_notification"
-            android:tint="@color/white"
+            app:tint="@color/white"
             android:contentDescription="Notifications" />
     </LinearLayout>
 
@@ -59,8 +59,6 @@
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@+id/app_bar" />
-
-
 
     <ScrollView
         android:layout_width="0dp"
@@ -86,16 +84,15 @@
                 android:layout_height="wrap_content"
                 android:text="Book a Ground"
                 android:textColor="@color/white"
-
                 android:textSize="32sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Find and book your perfect sports ground"
                 android:textColor="@color/hint_light_gray"
                 android:textSize="18sp"
-
                 android:layout_marginBottom="16dp" />
 
             <TextView
@@ -108,7 +105,6 @@
                 android:paddingEnd="12dp"
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp"
-
                 android:textStyle="bold"
                 android:layout_marginBottom="16dp" />
 
@@ -123,7 +119,6 @@
                 android:drawablePadding="12dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-
                 android:inputType="text"
                 android:layout_marginBottom="12dp" />
 
@@ -160,7 +155,6 @@
                             android:textColor="@color/white"
                             android:background="#60000000"
                             android:padding="8dp"
-
                             android:layout_margin="12dp"
                             android:textStyle="bold" />
 
@@ -172,7 +166,6 @@
                             android:text="Available"
                             android:textColor="@color/white"
                             android:background="@color/accent_teal"
-
                             android:paddingStart="8dp"
                             android:paddingEnd="8dp"
                             android:paddingTop="4dp"
@@ -195,10 +188,7 @@
                             android:textColor="@color/white"
                             android:textSize="21sp"
                             android:textStyle="bold"
-
                             android:layout_marginBottom="8dp" />
-
-
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -210,7 +200,6 @@
                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rajeev Nagar, Bareilly 243122" android:textColor="@color/hint_light_gray" android:textSize="16sp" android:layout_marginStart="8dp" />
                         </LinearLayout>
 
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -220,7 +209,6 @@
                             <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_clock" android:tint="@color/hint_light_gray" android:contentDescription="Clock Icon" />
                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08:00 - 22:00" android:textColor="@color/hint_light_gray" android:textSize="16sp" android:layout_marginStart="8dp" />
                         </LinearLayout>
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -234,14 +222,12 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:text="G"
-
                                 android:gravity="center"
                                 android:textColor="@color/bg_dark_navy"
                                 android:background="@drawable/rounded_owner_initial"
                                 android:textStyle="bold"
                                 android:textSize="18sp"
                                 android:layout_marginEnd="12dp" />
-
 
                             <LinearLayout
                                 android:layout_width="0dp"
@@ -252,16 +238,27 @@
                                 <TextView android:fontFamily="@font/slkscr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Owner" android:textColor="@color/hint_light_gray" android:textSize="14sp" />
                             </LinearLayout>
 
-                            <!-- Rating -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="⭐ 4.8"
                                 android:textColor="@color/accent_teal"
                                 android:textSize="18sp"
-
                                 android:textStyle="bold" />
                         </LinearLayout>
+
+                        <Button
+                            android:id="@+id/book_now_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:text="Book Now"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:backgroundTint="@color/accent_teal"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/slkscr" />
+
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -274,14 +271,12 @@
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@id/bottom_nav"/>
 
-
     <View
         android:id="@+id/app_bar_divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@+id/app_bar" />
-
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -292,8 +287,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-
-
     <View
         android:id="@+id/bottom_nav_divider"
         android:layout_width="match_parent"
@@ -302,12 +295,11 @@
         app:layout_constraintBottom_toTopOf="@id/bottom_nav"/>
 
     <FrameLayout
-        android:id="@+id/fragment_container"
+        android:id="@+id/fragment_container1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_nav" />
 
-    <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="0dp"
@@ -319,23 +311,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
-    <!-- Book Now Button -->
-
-    <Button
-        android:id="@+id/book_now_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Book Now"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-
-        android:backgroundTint="@color/accent_teal"
-        android:minHeight="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="72dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

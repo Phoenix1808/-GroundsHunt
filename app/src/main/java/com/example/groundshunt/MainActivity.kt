@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
-        // Default fragment = Search
+
         if (savedInstanceState == null) {
             setCurrentFragment(searchFragment)
             bottomNav.selectedItemId = R.id.nav_search
         }
 
-        // Navigation listener
+
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {

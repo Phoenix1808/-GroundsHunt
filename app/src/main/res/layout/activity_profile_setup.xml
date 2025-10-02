@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_dark_navy"
     android:fillViewport="true"
-    tools:context=".ProfileSetup">
+    tools:context="com.yourpackage.groundshunt.ProfileSetupActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

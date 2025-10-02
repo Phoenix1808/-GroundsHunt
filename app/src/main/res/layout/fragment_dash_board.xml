@@ -55,7 +55,6 @@
             android:orientation="vertical"
             android:layout_marginBottom="24dp">
 
-            <!-- Row 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,7 +106,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@drawable/ic_clock"
-                        android:tint="@color/accent_teal"
+                        app:tint="@color/accent_teal"
                         android:contentDescription="Clock Icon"/>
 
                     <TextView
@@ -224,7 +223,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_calendar"
-                    android:tint="@color/white"
+                    app:tint="@color/white"
                     android:contentDescription="Calendar Icon"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -273,7 +272,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_graph"
-                    android:tint="@color/white"
+                    app:tint="@color/white"
                     android:contentDescription="Graph Icon"/>
                 <TextView
                     android:layout_width="wrap_content"

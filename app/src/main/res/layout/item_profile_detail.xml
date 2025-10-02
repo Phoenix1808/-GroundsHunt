@@ -2,17 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:gravity="center_vertical"
     android:layout_marginBottom="16dp">
 
-    <!-- Icon -->
+
     <ImageView
         android:id="@+id/img_detail_icon"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/ic_profile"
-        android:tint="@color/accent_teal"
+        app:tint="@color/accent_teal"
         android:contentDescription="Detail Icon"
         android:layout_marginEnd="12dp" />
 

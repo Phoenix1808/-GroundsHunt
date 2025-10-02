@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         loginButton.setOnClickListener {
-            // TODO: Replace this with real authentication logic
+
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish() // Optional: prevent user from returning to LoginActivity using back button
